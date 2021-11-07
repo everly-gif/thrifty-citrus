@@ -17,8 +17,10 @@ const Input = styled.input `
 padding:8px 12px;
 border-top-left-radius:10px;
 border-bottom-left-radius:10px;
-width:80%;
+width:70%;
 background-color:#fff;
+outline:none;
+border:none;
 `;
 const InputContainer=styled.div`
 text-align:center;

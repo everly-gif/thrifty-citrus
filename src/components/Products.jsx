@@ -1,5 +1,4 @@
 
-import { CenterFocusStrong } from '@material-ui/icons';
 import styled from 'styled-components'
 import { popular_products } from '../data'
 import Product from './Product';
@@ -10,6 +9,7 @@ padding:30px;
 flex-wrap:wrap;`;
 const Title =styled.h1`
 text-align:center;
+margin-top:30px;
 `;
 const Products = () => {
     return (
