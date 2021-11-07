@@ -21,6 +21,7 @@ margin-right:20px;
 const Filter =styled.div ``;
 const Input=styled.select `
 padding:10px;
+margin-left:10px;
 `;
 const Option=styled.option``;
 const CategoryProducts = () => {
@@ -38,6 +39,13 @@ const CategoryProducts = () => {
                       <Option>M</Option>
                       <Option>L</Option>
                       <Option>XL</Option>
+                    </Input>
+                    <Input>
+                      <Option disabled selected>Select a Style</Option>
+                      <Option>Full Sets</Option>
+                      <Option>Dresses</Option>
+                      <Option>Accessories</Option>
+                      
                     </Input>
                     </Filter>
                     <Filter><FilterContent>Sort Products By</FilterContent>
