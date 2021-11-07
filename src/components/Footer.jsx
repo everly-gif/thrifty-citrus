@@ -40,7 +40,7 @@ const Footer = () => {
         <div>
             <Container>
                 <Wrapper>
-                  <About><Title>ABOUT US</Title>Thrifty Citrus is a online thrift store for women clothing. We sell second hand clothes for affordable pricing</About>
+                  <About><Title>ABOUT US</Title>Thrifty Citrus is a thrift store for women clothing. We sell second hand clothes for affordable pricing</About>
                   <Styles>
                   <Title>ITEMS</Title>
                       <List>

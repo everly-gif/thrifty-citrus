@@ -7,15 +7,22 @@ display:flex;
 padding:30px;
 justify-content:space-between;
 `;
+const Title =styled.h1`
+text-align:center;
+margin-top:30px;
+margin-bottom:30px;
+`;
 const Categories = () => {
     return (
         <div>
             <Container>
+            
              {categories.map(item=>
              (
                  <CategoryItem item={item} key={item.id}/>
              ))}
             </Container>
+            <Title>BEST SELLERS</Title>
         </div>
     )
 }
