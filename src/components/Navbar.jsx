@@ -50,7 +50,7 @@ const Navbar = () => {
             <Wrapper>
                 <Left>THRIFTY CITRUS.</Left>
                 <Center>
-                <SearchContainer>
+                <SearchContainer className="search">
                     <Input />
                     <Search/>
                 </SearchContainer>
