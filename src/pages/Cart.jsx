@@ -71,6 +71,11 @@ flex:3;
 `;
 const Summary=styled.div`
 flex:1;
+border:0.5px solid lightgray;
+border-radius:10px;
+padding:20px;
+height:60vh;
+margin-left:20px;
 `;
 const Hr=styled.hr`
 color:rgb(0 0 0 / 0.2);
@@ -79,6 +84,30 @@ const Text=styled.span`
 text-decoration:underline;
 cursor:pointer;
 margin:0 10px;
+`;
+const SummaryTitle=styled.h1`
+font-weight:100;
+
+`;
+const SummaryItem=styled.div`
+margin:30px 0px;
+display:flex;
+justify-content:space-between;
+font-weight:${props=>props.type ===" total" && "500"};
+font-size:${props=>props.type === "total" && "24px"}
+`;
+const SummaryItemText=styled.span`
+
+`;
+const SummaryItemPrice=styled.span`
+
+`;
+const Btn=styled.button`
+width:100%;
+padding:10px;
+background-color:black;
+color:white;
+font-weight:600;
 `;
 const Cart = () => {
     return (
@@ -131,7 +160,28 @@ const Cart = () => {
                      </Price>
                  </Product>
                  </Info>
-                 <Summary>summary</Summary>
+                 <Summary>
+                     <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                     <SummaryItem>
+                         <SummaryItemText>Subtotal</SummaryItemText>
+                         <SummaryItemPrice>200 INR</SummaryItemPrice>
+                     </SummaryItem>
+                     <SummaryItem>
+                         <SummaryItemText>Estimated Shipping</SummaryItemText>
+                         <SummaryItemPrice>70 INR</SummaryItemPrice>
+                     </SummaryItem>
+                     <SummaryItem>
+                         <SummaryItemText>Shipping Discount</SummaryItemText>
+                         <SummaryItemPrice>-30 INR</SummaryItemPrice>
+                     </SummaryItem>
+                     <SummaryItem type="total">
+                         <SummaryItemText >Total</SummaryItemText>
+                         <SummaryItemPrice>270 INR</SummaryItemPrice>
+                     </SummaryItem>
+                     <Btn>CHECKOUT NOW</Btn>
+                 </Summary>
+
+
              </Bottom>
              </Wrapper>
             <Footer/>
